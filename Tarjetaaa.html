@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarjeta Virtual San Valentín</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(45deg, #f9e066, #7d4b32); /* Degradado vibrante */
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            overflow: hidden;
+        }
+        .container {
+            background-color: rgba(125, 75, 50, 0.9);
+            padding: 40px;
+            border-radius: 20px;
+            text-align: center;
+            color: #f9e066;
+            box-shadow: 0 0 25px rgba(0, 0, 0, 0.3);
+            max-width: 80%;
+            animation: slideIn 1s ease-out;
+            width: 600px;
+        }
+        h1 {
+            font-size: 4em;
+            animation: textPop 1s ease-out;
+            color: #f9e066;
+        }
+        p {
+            font-size: 1.8em;
+            margin-top: 15px;
+            font-weight: bold;
+            animation: fadeIn 2s ease-in;
+        }
+        .heart {
+            color: #f44336;
+            font-size: 80px;
+            animation: heartBeat 1.5s ease-in-out infinite;
+        }
+        .footer {
+            margin-top: 30px;
+            font-size: 1.2em;
+            color: #f9e066;
+        }
+        /* Animaciones */
+        @keyframes slideIn {
+            0% {
+                transform: translateY(-100%);
+            }
+            100% {
+                transform: translateY(0);
+            }
+        }
+        @keyframes textPop {
+            0% {
+                transform: scale(0.5);
+                opacity: 0;
+            }
+            100% {
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+        @keyframes heartBeat {
+            0% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.2);
+            }
+            100% {
+                transform: scale(1);
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>¡Feliz San Valentín!</h1>
+        <p>Para el chocoso que más mal me cae, pero al que más quiero.</p>
+        <div class="heart">💖</div>
+        <p>¡Porque a pesar de todo, te aprecio muchísimo!</p>
+        <div class="footer">
+            <p>¡Espero que tengas un increíble día! 💛</p>
+        </div>
+    </div>
+
+</body>
+</html>
